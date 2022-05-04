@@ -1,2 +1,3 @@
 name = input("What is you name?")
 print("Hello {} this is a quiz! This quiz is a quiz on Naruto.".format(name))
+print("There are two rules when it comes to this quiz. Rule 1, all the answers must come from you and only you. You are not allowed to get the answers from a browser or from anyone else. Rule 2, when answering, spell the answer as it is presented. So if the answer you want to put is cat and you put kat, it will be wrong. Lets begin")
