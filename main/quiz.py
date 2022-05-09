@@ -22,8 +22,210 @@ elif q1 == "The Land of Wind" or q1 == "Sunagakure" or q1 == "3":
 else:
     print("That is not an option")
     total_score -= 5
+        
+print("You current score is {}.".format(total_score))
+
+q2 = input("")
+
+if q == "" or q == "" or q == "":
+    print("Correct, you earned 10 points!")
+    total_score += 10
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+else:
+    print("That is not an option")
+    total_score -= 5
 
 print("You current score is {}.".format(total_score))
-q2 = input
+
+q = input("")
+
+if q == "" or q == "" or q == "":
+    print("Correct, you earned 10 points!")
+    total_score += 10
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+else:
+    print("That is not an option")
+    total_score -= 5
+
+print("You current score is {}.".format(total_score))
+
+q = input("")
+
+if q == "" or q == "" or q == "":
+    print("Correct, you earned 10 points!")
+    total_score += 10
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+else:
+    print("That is not an option")
+    total_score -= 5
+
+print("You current score is {}.".format(total_score))
+
+q = input("")
+
+if q == "" or q == "" or q == "":
+    print("Correct, you earned 10 points!")
+    total_score += 10
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+else:
+    print("That is not an option")
+    total_score -= 5
+
+print("You current score is {}.".format(total_score))
+
+q = input("")
+
+if q == "" or q == "" or q == "":
+    print("Correct, you earned 10 points!")
+    total_score += 10
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+else:
+    print("That is not an option")
+    total_score -= 5
+
+print("You current score is {}.".format(total_score))
+
+q = input("")
+
+if q == "" or q == "" or q == "":
+    print("Correct, you earned 10 points!")
+    total_score += 10
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+else:
+    print("That is not an option")
+    total_score -= 5
+
+print("You current score is {}.".format(total_score))
+
+q = input("")
+
+if q == "" or q == "" or q == "":
+    print("Correct, you earned 10 points!")
+    total_score += 10
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+else:
+    print("That is not an option")
+    total_score -= 5
+
+print("You current score is {}.".format(total_score))
+
+q = input("")
+
+if q == "" or q == "" or q == "":
+    print("Correct, you earned 10 points!")
+    total_score += 10
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+else:
+    print("That is not an option")
+    total_score -= 5
+
+print("You current score is {}.".format(total_score))
+
+q = input("")
+
+if q == "" or q == "" or q == "":
+    print("Correct, you earned 10 points!")
+    total_score += 10
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+else:
+    print("That is not an option")
+    total_score -= 5
+
+print("You current score is {}.".format(total_score))
+
+q = input("")
+
+if q == "" or q == "" or q == "":
+    print("Correct, you earned 10 points!")
+    total_score += 10
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+elif q == "" or q == "" or q == "":
+    print("Sorry, that's incorrect, you lost 5 points")
+    total_score -= 5
+else:
+    print("That is not an option")
+    total_score -= 5
+
+print("You current score is {}.".format(total_score))
+
+
+
 #infrom the partipant of their score and thank them for playing.
 print("You scored {}.".format(total_score))
