@@ -1,11 +1,15 @@
 #introduce the quiz.
+from fcntl import LOCK_WRITE
+
+
 name = input("What is you name?")
 print("Hello {}, this is a quiz! This quiz is a quiz on the anime, Naruto!".format(name))
 print("Before we being, lets go over a few housekeeping rules if you will. \n Number 1: When asnwering a question, answer with either the option or option number. \n Number 2: Dont cheat, that ruins the quiz. \n That is all, Lets begin")
 
 total_score = 0
 #start asking the questions for the quiz.
-q1 = input("Question 1: Where was Naruto Uzumaki born? \n1. The Land of Lightning/Kumogakure \n2. The Land of Water/Kirigakure \n3. The Land of Wind/Sunagakure \n4. The Land of Fire/Konohagakure. ")
+q1 = input("Question 1: Where was Naruto Uzumaki born? \n1. The Land of Lightning/Kumogakure \n2. The Land of Water/Kirigakure \n3. The Land of Wind/Sunagakure \n4. The Land of Fire/Konohagakure. ").lower().strip()
+
 
 if q1 == "The Land of Fire." or q1 == "Konohagakure." or q1 == "4":
     print("Correct, you earned 10 points!")
@@ -170,13 +174,13 @@ q9 = input("Question 9: What is the name of the Jutsu Naruto creates? \n1. Rasen
 if q9 == "1" or q9 == "Rasen Shuriken":
     print("Correct, you earned 10 points!")
     total_score += 10
-elif q9 == "2" or q9 == "":
+elif q9 == "2" or q9 == "Gum gum gatling gun":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
-elif q9 == "3" or q9 == "":
+elif q9 == "3" or q9 == "Shadow clone jutsu":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
-elif q9 == "4" or q9 == "":
+elif q9 == "4" or q9 == "Spirit Bomb":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
 else:
@@ -185,47 +189,23 @@ else:
 
 print("You current score is {}.".format(total_score))
 
-q = input("")
+q10 = input("Question 10: The Second hokage? \n1. Tobirama Senju \n2. Hashirama Senju \n3. Minato Namikaze \n4. Rasa")
 
-if q == "" or q == "" or q == "":
+if q10 == "1" or q10 == "Tobirama Senju":
     print("Correct, you earned 10 points!")
     total_score += 10
-elif q == "" or q == "" or q == "":
+elif q10 == "2" or q10 == "Hashirama Senju":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
-elif q == "" or q == "" or q == "":
+elif q10 == "3" or q10 == "Minato Namikaze":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
-elif q == "" or q == "" or q == "":
-    print("Sorry, that's incorrect, you lost 5 points")
-    total_score -= 5
-else:
-    print("That is not an option")
-    total_score -= 5
-
-print("You current score is {}.".format(total_score))
-
-q = input("")
-
-if q == "" or q == "" or q == "":
-    print("Correct, you earned 10 points!")
-    total_score += 10
-elif q == "" or q == "" or q == "":
-    print("Sorry, that's incorrect, you lost 5 points")
-    total_score -= 5
-elif q == "" or q == "" or q == "":
-    print("Sorry, that's incorrect, you lost 5 points")
-    total_score -= 5
-elif q == "" or q == "" or q == "":
+elif q10 == "4" or q10 == "Rasa":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
 else:
     print("That is not an option")
     total_score -= 5
-
-print("You current score is {}.".format(total_score))
-
-
 
 #infrom the partipant of their score and thank them for playing.
-print("You scored {}.".format(total_score))
+print("Thank you{} for play! Out of 100 points, you scored..... \n ***Drumrole*** \n{}!!! \n Thank yoiu for playing!!!".format(name, total_score))
