@@ -7,25 +7,33 @@ total_score = 0
 total_correct = 0
 
 #start asking the questions for the quiz.
-q1 = input("Question 1: Where was Naruto Uzumaki born? \n1. The Land of Lightning/Kumogakure \n2. The Land of Water/Kirigakure \n3. The Land of Wind/Sunagakure \n4. The Land of Fire/Konohagakure. ").lower().strip()
+i = 0
+while i < 4:
+    q1 = input("Question 1: Where was Naruto Uzumaki born? \n1. The Land of Lightning/Kumogakure \n2. The Land of Water/Kirigakure \n3. The Land of Wind/Sunagakure \n4. The Land of Fire/Konohagakure. ").lower().strip()
 
 
 if q1 == "thelandoffire" or q1 == "konohagakure" or q1 == "4":
     print("Correct, you earned 10 points!")
     total_score += 10
     total_correct += 1
+
 elif q1 == "thelandoflightning" or q1 == "kumogakure" or q1 == "1":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
+
 elif q1 == "thelandofwater" or q1 == "kirigakure" or q1 == "2":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
+
 elif q1 == "thelandofwind" or q1 == "sunagakure" or q1 == "3":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
+
 else:
     print("That is not an option")
-    total_score -= 5
+    i += 1
+    
+
         
 print("You current score is {}.".format(total_score))
 
