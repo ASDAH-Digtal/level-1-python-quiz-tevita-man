@@ -1,6 +1,4 @@
 #introduce the quiz.
-from fcntl import LOCK_WRITE
-
 
 name = input("What is you name?")
 print("Hello {}, this is a quiz! This quiz is a quiz on the anime, Naruto!".format(name))
