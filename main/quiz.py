@@ -1,10 +1,10 @@
 #introduce the quiz.
-
 name = input("What is you name?")
 print("Hello {}, this is a quiz! This quiz is a quiz on the anime, Naruto!".format(name))
 print("Before we being, lets go over a few housekeeping rules if you will. \n Number 1: When asnwering a question, answer with either the option or option number. \n Number 2: Dont cheat, that ruins the quiz. \n That is all, Lets begin")
 
 total_score = 0
+
 #start asking the questions for the quiz.
 q1 = input("Question 1: Where was Naruto Uzumaki born? \n1. The Land of Lightning/Kumogakure \n2. The Land of Water/Kirigakure \n3. The Land of Wind/Sunagakure \n4. The Land of Fire/Konohagakure. ").lower().strip()
 
