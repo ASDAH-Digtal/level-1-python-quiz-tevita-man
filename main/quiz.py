@@ -10,7 +10,7 @@ total_correct = 0
 q1 = input("Question 1: Where was Naruto Uzumaki born? \n1. The Land of Lightning/Kumogakure \n2. The Land of Water/Kirigakure \n3. The Land of Wind/Sunagakure \n4. The Land of Fire/Konohagakure. ").lower().strip()
 
 
-if q1 == "thelandoffire." or q1 == "konohagakure." or q1 == "4":
+if q1 == "thelandoffire" or q1 == "konohagakure" or q1 == "4":
     print("Correct, you earned 10 points!")
     total_score += 10
     total_correct += 1
@@ -217,4 +217,4 @@ else:
     total_score -= 5
 
 #infrom the partipant of their score and thank them for playing.
-print("Thank you{} for play! Out of 100 points, you scored..... \n ***Drumrole*** \n{}!!! You also got a total of {} question right out of 10 \n Thank yoiu for playing!!!".format(name, total_score, total_correct))
+print("Thank you {} for play! Out of 100 points, you scored..... \n ***Drumrole*** \n{}!!! You also got a total of {} question right out of 10 \n Thank yoiu for playing!!!".format(name, total_score, total_correct))
