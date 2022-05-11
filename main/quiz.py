@@ -4,6 +4,7 @@ print("Hello {}, this is a quiz! This quiz is a quiz on the anime, Naruto!".form
 print("Before we being, lets go over a few housekeeping rules if you will. \n Number 1: When asnwering a question, answer with either the option or option number. \n Number 2: Dont cheat, that ruins the quiz. \n That is all, Lets begin")
 
 total_score = 0
+total_correct = 0
 
 #start asking the questions for the quiz.
 q1 = input("Question 1: Where was Naruto Uzumaki born? \n1. The Land of Lightning/Kumogakure \n2. The Land of Water/Kirigakure \n3. The Land of Wind/Sunagakure \n4. The Land of Fire/Konohagakure. ").lower().strip()
@@ -12,6 +13,7 @@ q1 = input("Question 1: Where was Naruto Uzumaki born? \n1. The Land of Lightnin
 if q1 == "thelandoffire." or q1 == "konohagakure." or q1 == "4":
     print("Correct, you earned 10 points!")
     total_score += 10
+    total_correct += 1
 elif q1 == "thelandoflightning" or q1 == "kumogakure" or q1 == "1":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
@@ -32,6 +34,7 @@ q2 = input("Question 2: How old is Naruto in the very first episode? \n1. 13 \n2
 if q2 == "3" or q2 == "12":
     print("Correct, you earned 10 points!")
     total_score += 10
+    total_correct += 1
 elif q2 == "1" or q2 == "13":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
@@ -52,6 +55,7 @@ q3 = input("Question 3: How tall is Naruto before the time skip (cm)? \n1. 146 \
 if q3 == "1" or q3 == "146":
     print("Correct, you earned 10 points!")
     total_score += 10
+    total_correct += 1
 elif q3 == "2" or q3 == "147" :
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
@@ -72,6 +76,7 @@ q4 = input("Question 4: Who is Naruto’s rival? \n1. Sasuke \n2. Shikamaru \n3.
 if q4 == "1" or q4 == "sasuke":
     print("Correct, you earned 10 points!")
     total_score += 10
+    total_correct += 1
 elif q4 == "2" or q4 == "shikamaru":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
@@ -92,6 +97,7 @@ q5 = input("Question 5: What is the name of the beast inside of Naruto? \n1. Kur
 if q5 == "1" or q5 == "kuruma":
     print("Correct, you earned 10 points!")
     total_score += 10
+    total_correct += 1
 elif q5 == "2" or q5 == "shukaku":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
@@ -112,6 +118,7 @@ q6 = input("Question 6: Naruto favorite food/food store? \n1. Lightning burger \
 if q6 == "2" or q6 == "ichurakuramen":
     print("Correct, you earned 10 points!")
     total_score += 10
+    total_correct += 1
 elif q6 == "1" or q6 == "lightningburger":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
@@ -132,6 +139,7 @@ q7 = input("Question 7: What is the name of the book that Naruto gives to Kakash
 if q7 == "2" or q7 == "ichaichatactics":
     print("Correct, you earned 10 points!")
     total_score += 10
+    total_correct += 1
 elif q7 == "1" or q7 == "ichaichaparadise":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
@@ -152,6 +160,7 @@ q8 = input("Question 8: What is the real name of the villain known as Tobi? \n1.
 if q8 == "4" or q8 == "obitouchiha":
     print("Correct, you earned 10 points!")
     total_score += 10
+    total_correct += 1
 elif q8 == "1" or q8 == "itachiuchiha":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
@@ -172,6 +181,7 @@ q9 = input("Question 9: What is the name of the Jutsu Naruto creates? \n1. Rasen
 if q9 == "1" or q9 == "rasenshuriken":
     print("Correct, you earned 10 points!")
     total_score += 10
+    total_correct += 1
 elif q9 == "2" or q9 == "gumgumgatlinggun":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
@@ -192,6 +202,7 @@ q10 = input("Question 10: The Second hokage? \n1. Tobirama Senju \n2. Hashirama 
 if q10 == "1" or q10 == "tobiramasenju":
     print("Correct, you earned 10 points!")
     total_score += 10
+    total_correct += 1
 elif q10 == "2" or q10 == "hashiramasenju":
     print("Sorry, that's incorrect, you lost 5 points")
     total_score -= 5
@@ -206,4 +217,4 @@ else:
     total_score -= 5
 
 #infrom the partipant of their score and thank them for playing.
-print("Thank you{} for play! Out of 100 points, you scored..... \n ***Drumrole*** \n{}!!! \n Thank yoiu for playing!!!".format(name, total_score))
+print("Thank you{} for play! Out of 100 points, you scored..... \n ***Drumrole*** \n{}!!! You also got a total of {} question right out of 10 \n Thank yoiu for playing!!!".format(name, total_score, total_correct))
