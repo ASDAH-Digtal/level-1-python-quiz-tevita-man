@@ -7,34 +7,27 @@ total_score = 0
 total_correct = 0
 
 #start asking the questions for the quiz.
-i = 0
-while i < 4:
-    q1 = input("Question 1: Where was Naruto Uzumaki born? \n1. The Land of Lightning/Kumogakure \n2. The Land of Water/Kirigakure \n3. The Land of Wind/Sunagakure \n4. The Land of Fire/Konohagakure. ").lower().strip()
+
+q1 = input("Question 1: Where was Naruto Uzumaki born? \n1. The Land of Lightning/Kumogakure \n2. The Land of Water/Kirigakure \n3. The Land of Wind/Sunagakure \n4. The Land of Fire/Konohagakure. ").lower().strip()
 
 
 if q1 == "thelandoffire" or q1 == "konohagakure" or q1 == "4":
     print("Correct, you earned 10 points!")
     total_score += 10
-    total_correct += 1
-
+    total_correct += 1   
 elif q1 == "thelandoflightning" or q1 == "kumogakure" or q1 == "1":
     print("Sorry, that's incorrect, you lost 5 points")
-    total_score -= 5
-
+    total_score -= 5 
 elif q1 == "thelandofwater" or q1 == "kirigakure" or q1 == "2":
     print("Sorry, that's incorrect, you lost 5 points")
-    total_score -= 5
-
+    total_score -= 5  
 elif q1 == "thelandofwind" or q1 == "sunagakure" or q1 == "3":
     print("Sorry, that's incorrect, you lost 5 points")
-    total_score -= 5
-
+    total_score -= 5 
 else:
-    print("That is not an option")
-    i += 1
+    print("That is not an option, try again.")
     
 
-        
 print("You current score is {}.".format(total_score))
 
 q2 = input("Question 2: How old is Naruto in the very first episode? \n1. 13 \n2. 14 \n3. 12 \n4. 11").strip()
@@ -54,7 +47,7 @@ elif q2 == "4" or q2 == "11":
     total_score -= 5
 else:
     print("That is not an option")
-    total_score -= 5
+    
 
 print("You current score is {}.".format(total_score))
 
@@ -75,7 +68,7 @@ elif q3 == "4" or q3 == "149":
     total_score -= 5
 else:
     print("That is not an option")
-    total_score -= 5
+    
 
 print("You current score is {}.".format(total_score))
 
@@ -96,7 +89,7 @@ elif q4 == "4" or q4 == "chogi":
     total_score -= 5
 else:
     print("That is not an option")
-    total_score -= 5
+    
 
 print("You current score is {}.".format(total_score))
 
@@ -117,7 +110,7 @@ elif q5 == "4" or q5 == "isobu":
     total_score -= 5
 else:
     print("That is not an option")
-    total_score -= 5
+    
 
 print("You current score is {}.".format(total_score))
 
@@ -138,7 +131,7 @@ elif q6 == "4" or q6 == "onigiri":
     total_score -= 5
 else:
     print("That is not an option")
-    total_score -= 5
+    
 
 print("You current score is {}.".format(total_score))
 
@@ -159,7 +152,7 @@ elif q7 == "4" or q7 == "ichaichaviolence":
     total_score -= 5
 else:
     print("That is not an option")
-    total_score -= 5
+    
 
 print("You current score is {}.".format(total_score))
 
@@ -180,7 +173,7 @@ elif q8 == "3" or q8 == "shisuiuchiha":
     total_score -= 5
 else:
     print("That is not an option")
-    total_score -= 5
+    
 
 print("You current score is {}.".format(total_score))
 
@@ -201,7 +194,7 @@ elif q9 == "4" or q9 == "spiritbomb":
     total_score -= 5
 else:
     print("That is not an option")
-    total_score -= 5
+    
 
 print("You current score is {}.".format(total_score))
 
@@ -222,7 +215,7 @@ elif q10 == "4" or q10 == "rasa":
     total_score -= 5
 else:
     print("That is not an option")
-    total_score -= 5
+    
 
 #infrom the partipant of their score and thank them for playing.
 print("Thank you {} for play! Out of 100 points, you scored..... \n ***Drumrole*** \n{}!!! You also got a total of {} question right out of 10 \n Thank yoiu for playing!!!".format(name, total_score, total_correct))
