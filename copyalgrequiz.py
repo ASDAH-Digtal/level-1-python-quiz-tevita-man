@@ -6,6 +6,7 @@
 
 
 #Functions of the quiz
+#This function asks the questions and takes in the users input.
 def new_game():
     
     guesses = []
@@ -20,40 +21,69 @@ def new_game():
         guess = input("").strip().lower()
         guesses.append(guess)
         
-        check_answer(questions.get(key),guess)
+        correct_guesses += check_answer(questions.get(key), guess)
         questions_num += 1
 
-#------------------------------
+    display_score(correct_guesses, guesses)
+
+
+#Ths function checks if the user answred the question correctly
 def check_answer(answer , guess):
     
     if answer == guess:
         print("correct!")
         return 1
     else:
-        print()
+        print("")
+        return 0
 
 #------------------------------
-def display_score():
-    pass
-#------------------------------
+def display_score(correct_guesses, guesses):
+    print("")
+    print("resualts")
+    
+    print("Answers: ", end="")
+    for i in questions:
+        print(questions.get(i), end=" ")
+    print()
+
+    print("Guesses: ", end="")
+    for i in guesses:
+        print(questions.get(i), end=" ")
+    print()
+
+    score = int(correct_guesses/len(questions))*100
+    print(""+str(score)+"%") 
+
+#This function is responsiblie for asking if they would like to play again.
 def play_again():
-    pass
+    
+    responese = input("")
+    responese = responese.upper()
 
-#Dictionary that holds the questions and asnwers
+    if responese == "YES":
+        return True
+    else:
+        return False
+
+
+#Dictionary that holds the questions and correct asnwers
 questions = {
-    ":" "": "",
-    ":" "": "",
-    ":" "": "",
-    ":" "": "",
-    ":" "": "",
-    ":" "": "",
-    ":" "": "",
-    ":" "": "",
-    ":" "": "",
-    ":" "": "",  
+    "Where was Naruto Uzumaki born?: ": "A",
+    ": ": "",
+    ": ": "",
+    ": ": "",
+    ": ": "",
+    ": ": "",
+    ": ": "",
+    ": ": "",
+    ": ": "",
+    ": ": "",
+    ": ": ""
+    
 }
 
-# 2list that holds all answer options to answer question
+#list that holds all answer options to each question
 options = [ [""""""""],
             [""""""""], 
             [""""""""],
@@ -67,3 +97,8 @@ options = [ [""""""""],
 ]
 
 new_game()
+
+while play_again():
+    new_game
+
+print("byeeeeeeeeeeee")
