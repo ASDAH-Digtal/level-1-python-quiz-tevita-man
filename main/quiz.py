@@ -283,7 +283,7 @@ def new_game():
             print("That is not an option, tries left {}".format(3 - x))
             x += 1
     
-    #infrom the partipant of their score and thank them for playing.
+    #Infrom the partipant of their score and thank them for playing.
     print("Thank you {} for play! Out of 100 points, you scored..... \n ***Drumrole*** \n !!{}!! You also got a total of {} question right out of 10 \n Thank yoiu for playing!!!".format(name, total_score, total_correct))
 
 #Function that controls the option to play again.
